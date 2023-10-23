@@ -18,4 +18,15 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000 + 3_000, account.getBalance());
     }
+    @Test
+    public void shouldNeedCalculationIfBalanceZero() {
+        SavingAccount account = new SavingAccount(
+                -2_000,
+                100,
+                3_000,
+                10
+        );
+               Assertions.assertEquals(0, account.yearChange());
+    }
+
 }
