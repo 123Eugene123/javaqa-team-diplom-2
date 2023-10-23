@@ -19,21 +19,21 @@ public class CreditAccountTest {
 
     @Test
     public void shouldAddToNegativeInitialBalance() {
-        Assertions.assertThrows(IllegalAccessError.class, () -> {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
             new CreditAccount(-2_000, 5_000, 15);
         });
     }
 
     @Test
     public void shouldAddToNegativeCreditBalance() {
-        Assertions.assertThrows(IllegalAccessError.class, () -> {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
             new CreditAccount(1_000, -5_000, 15);
         });
     }
 
     @Test
     public void shouldAddToNegativeRate() {
-        Assertions.assertThrows(IllegalAccessError.class, () -> {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
             new CreditAccount(1_000, 5_000, 0);
         });
     }
