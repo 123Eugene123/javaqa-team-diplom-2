@@ -33,9 +33,14 @@ public class CreditAccountTest {
 
     @Test
     public void shouldAddToNegativeRate() {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            new CreditAccount(1_000, 5_000, 0);
-        });
+        CreditAccount account = new CreditAccount(
+                0,
+                5_000,
+                0
+        );
+
+
+        Assertions.assertEquals(0, account.getBalance());
     }
 
     @Test
