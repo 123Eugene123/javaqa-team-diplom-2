@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class SavingAccountTest {
 
+    @Test
     public void shouldAddLessThanMaxBalance() { // Пополнить на сумму меньше максимума
         SavingAccount account = new SavingAccount(
                 2_000,
@@ -338,5 +339,5 @@ public class SavingAccountTest {
         int actual = account.yearChange();
         Assertions.assertEquals(expected, actual);
     }
-
 }
+gi
