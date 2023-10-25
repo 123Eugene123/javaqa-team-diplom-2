@@ -340,4 +340,3 @@ public class SavingAccountTest {
         Assertions.assertEquals(expected, actual);
     }
 }
-gi
