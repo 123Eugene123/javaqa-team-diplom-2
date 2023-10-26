@@ -55,6 +55,7 @@ public class SavingAccount extends Account {
         if (maxBalance <= minBalance) {
             throw new IllegalArgumentException(
                     "Минимальный баланс счета не может быть равен максимальному значению счета" + minBalance
+
             );
         }
 
@@ -76,7 +77,6 @@ public class SavingAccount extends Account {
      */
     @Override
     public boolean pay(int amount) {
-
         if (amount <= 0) {
             return false;
         }
@@ -135,4 +135,3 @@ public class SavingAccount extends Account {
         return maxBalance;
     }
 }
-

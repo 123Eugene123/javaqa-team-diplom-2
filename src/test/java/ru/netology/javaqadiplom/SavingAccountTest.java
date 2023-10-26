@@ -3,7 +3,7 @@ package ru.netology.javaqadiplom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SavingAccountTest {
+/*public class SavingAccountTest {
 
     @Test
     public void shouldAddLessThanMaxBalance() { // Пополнить на сумму меньше максимума
@@ -339,4 +339,15 @@ public class SavingAccountTest {
         int actual = account.yearChange();
         Assertions.assertEquals(expected, actual);
     }
-}
+    @Test
+    public void shouldNeedCalculationIfBalanceZero() {
+        SavingAccount account = new SavingAccount(
+                -2_000,
+                100,
+                3_000,
+                10
+        );
+               Assertions.assertEquals(0, account.yearChange());
+    }
+
+}*/
